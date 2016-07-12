@@ -27,7 +27,7 @@ namespace GuideboxSharp
             return show;
         }
 
-        public async Task<Show> GetShowByID(string id)
+        public async Task<Show> GetShowByID(int id)
         {
             Show show = await Request<Show>("show/" + id).ConfigureAwait(false);
             return show;
@@ -45,7 +45,7 @@ namespace GuideboxSharp
             return movie;
         }
 
-        public async Task<Movie> GetMovieByID(string id)
+        public async Task<Movie> GetMovieByID(int id)
         {
             Movie movie = await Request<Movie>("movie/" + id).ConfigureAwait(false);
             return movie;
