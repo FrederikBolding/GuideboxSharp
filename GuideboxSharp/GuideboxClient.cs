@@ -39,6 +39,18 @@ namespace GuideboxSharp
             return content;
         }
 
+        public async Task<SearchMovie> SearchMovieByExternalID(ExternalType type, string id)
+        {
+            SearchMovie movie = await Request<SearchMovie>("search/movie/id/" + type.ToString().ToLower() + "/" + id).ConfigureAwait(false);
+            return movie;
+        }
+
+        public async Task<Movie> GetMovieByID(string id)
+        {
+            Movie movie = await Request<Movie>("movie/" + id).ConfigureAwait(false);
+            return movie;
+        }
+
         private async Task<T> Request<T>(string query)
         {
             using (var client = new HttpClient())

@@ -92,23 +92,4 @@ namespace GuideboxSharp.Objects
         public LiveStream live_stream { get; set; }
         public int is_primary { get; set; }
     }
-
-    public class Genre
-    {
-        public int id { get; set; }
-        public string title { get; set; }
-    }
-
-    public class Tag
-    {
-        public int id { get; set; }
-        public string tag { get; set; }
-    }
-
-    public class Cast
-    {
-        public int id { get; set; }
-        public string name { get; set; }
-        public string character_name { get; set; }
-    }
 }

@@ -61,10 +61,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GuideboxClient.cs" />
-    <Compile Include="Objects\AvailableContent.cs" />
-    <Compile Include="Objects\ExternalType.cs" />
-    <Compile Include="Objects\SearchShow.cs" />
-    <Compile Include="Objects\Show.cs" />
+    <Compile Include="Objects\Shows\AvailableContent.cs" />
+    <Compile Include="Objects\Shared\ExternalType.cs" />
+    <Compile Include="Objects\Movies\Movie.cs" />
+    <Compile Include="Objects\Movies\SearchMovie.cs" />
+    <Compile Include="Objects\Shows\SearchShow.cs" />
+    <Compile Include="Objects\Shared\Cast.cs" />
+    <Compile Include="Objects\Shared\Genre.cs" />
+    <Compile Include="Objects\Shared\Tag.cs" />
+    <Compile Include="Objects\Shows\Show.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

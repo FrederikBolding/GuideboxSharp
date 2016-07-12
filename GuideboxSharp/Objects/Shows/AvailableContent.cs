@@ -56,29 +56,11 @@ namespace GuideboxSharp.Objects
         public Segments segments { get; set; }
     }
 
-    public class Episodes2
-    {
-        public int free { get; set; }
-        public int tv_everywhere { get; set; }
-        public int paid { get; set; }
-        public int subscription { get; set; }
-        public int total { get; set; }
-        public List<AllSource> all_sources { get; set; }
-    }
-
     public class iOS
     {
         public Episodes episodes { get; set; }
         public Clips clips { get; set; }
         public Segments segments { get; set; }
-    }
-
-    public class AllSource5
-    {
-        public int id { get; set; }
-        public string source { get; set; }
-        public string display_name { get; set; }
-        public string type { get; set; }
     }
 
     public class Android
