@@ -72,9 +72,41 @@ namespace GuideboxSharp.Objects
 
     public class LiveStream
     {
-        public List<object> web { get; set; }
-        public List<object> ios { get; set; }
-        public List<object> android { get; set; }
+        public LiveStreamWeb web { get; set; }
+        public LiveStreamiOS ios { get; set; }
+        public LiveStreamAndroid android { get; set; }
+    }
+
+    public class LiveStreamWeb
+    {
+        public object source { get; set; }
+        public object display_name { get; set; }
+        public string type { get; set; }
+        public string link { get; set; }
+    }
+
+    public class LiveStreamiOS
+    {
+        public object source { get; set; }
+        public object display_name { get; set; }
+        public string type { get; set; }
+        public string link { get; set; }
+        public object app_name { get; set; }
+        public object app_link { get; set; }
+        public int app_required { get; set; }
+        public object app_download_link { get; set; }
+    }
+
+    public class LiveStreamAndroid
+    {
+        public object source { get; set; }
+        public object display_name { get; set; }
+        public string type { get; set; }
+        public string link { get; set; }
+        public object app_name { get; set; }
+        public object app_link { get; set; }
+        public int app_required { get; set; }
+        public object app_download_link { get; set; }
     }
 
     public class Channel
