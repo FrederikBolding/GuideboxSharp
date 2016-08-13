@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/FrederikBolding/GuideboxSharp</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>An API wrapper for www.guidebox.com</description>
-    <releaseNotes>Initial release</releaseNotes>
+    <releaseNotes>Added movie support</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>Guidebox movies shows api</tags>
   </metadata>
